@@ -1,18 +1,18 @@
 const Randomize = () => {
-    // messages and numbers
-    let messages1 = ['noodles', 'rice', 'fries', 'spaghetti', 'dumplings', 'potatoes', ];
-    let messages2 = ['sausage', 'steak', 'beans', 'peas', 'spinach', 'fish', 'chicken', 'eggs', 'broccoli', ];
-    let messages3 = ['gravy', 'cream sauce', 'curry sauce', 'barbecue sauce', 'ketchup', 'mayonnaise', ];
+    //  ingredients
+    let main = ['noodles', 'rice', 'fries', 'spaghetti', 'dumplings', 'potatoes', ];
+    let garnish = ['sausage', 'steak', 'beans', 'peas', 'spinach', 'fish', 'chicken', 'eggs', 'broccoli', ];
+    let sauce = ['gravy', 'cream sauce', 'curry sauce', 'barbecue sauce', 'ketchup', 'mayonnaise', ];
 
-    // make my message and numbers random.
-    let randomMsg1 = Math.floor(Math.random() * messages1.length);
-    let randomMsg2 = Math.floor(Math.random() * messages2.length);
-    let randomMsg3 = Math.floor(Math.random() * messages3.length);
+    // make my ingredients random.
+    let randomMain = Math.floor(Math.random() * main.length);
+    let randomGarnish = Math.floor(Math.random() * garnish.length);
+    let randomSauce = Math.floor(Math.random() * sauce.length);
 
     //outputs the random end result to the console 
     let output = [];
-    output.push('Todays menu consists of ' + messages1[randomMsg1] + ' with ' + messages2[randomMsg2] + ' and ' +
-        messages3[randomMsg3]);
+    output.push('Todays menu consists of ' + main[randomMain] + ' with ' + garnish[randomGarnish] + ' and ' +
+        sauce[randomSauce]);
     return output
 };
 
